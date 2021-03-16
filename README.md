@@ -18,18 +18,18 @@ sudo apt-get install git npm maven -y
 
 ## Installation
 ```sh
-git clone https://bitbucket.org/zenitech/erlandaslisauskas-repo.git
+git clone https://github.com/ErlandasL/building-app.git
 ```
 Back-end
 ```sh
-cd erlandaslisauskas-repo/building-back/
+cd building-app/building-back/
 mvn spring-boot:run
 ```
 After running back-end open new terminal window to run front-end
 
 Front-end 
 ```sh
-cd erlandaslisauskas-repo/building-front/
+cd building-app/building-front/
 npm install
 npm start
 ```
