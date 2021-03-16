@@ -43,15 +43,6 @@ public class BuildingBackApplication implements CommandLineRunner {
         return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo()).select()
                 .apis(RequestHandlerSelectors.basePackage("com.erlandaslisauskas")).build();
     }
-//    @Bean
-//    public Docket api() {
-//        return new Docket(DocumentationType.SWAGGER_2)
-//                .select()
-//                .apis(RequestHandlerSelectors.any())
-//                .paths(PathSelectors.any())
-//                .build();
-//    }
-
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder().title("Internship task").version("0.0.1-SNAPSHOT").build();
@@ -77,22 +68,5 @@ public class BuildingBackApplication implements CommandLineRunner {
             propertyTypeRepository.save(propertyTypeIndustrial);
         }
 
-//        Owner owner = new Owner("AK321", "John", "Doe");
-//        ownerRepository.save(owner);
-//        BuildingRecord buildingRecord = new BuildingRecord(30, 60000);
-//        buildingRecord.setPropertyType(propertyTypeRepository.findByName(EPropertyType.APARTMENT).get());
-//        Address ozo1 = new Address("Vilnius", "Ozo", "1");
-//        addressRepository.save(ozo1);
-//        ozo1.setBuildingRecord(buildingRecordRepository.getById(buildingRecord.getId()));
-//        buildingRecord.setAddress(addressRepository.findByCity("Vilnius"));
-//        addressRepository.save(ozo1);
-//        buildingRecordRepository.save(buildingRecord);
-//        buildingRecord.setOwner(ownerRepository.findByPersonalNumber("AK321"));
-//        buildingRecordRepository.save(buildingRecord);
-//        owner.getRecords().add(buildingRecord);
-
-//        ownerRepository.save(owner);
-//        double value = ownerService.calculateTax("AK321");
-//        System.out.println(ownerService.calculateTax("AK321"));
     }
 }
