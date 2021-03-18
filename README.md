@@ -1,4 +1,4 @@
-# Building App
+# Building App - Internship simple Full-Stack task
 ## Prerequisites
 1. [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 2. [Node.js](https://nodejs.org/)
